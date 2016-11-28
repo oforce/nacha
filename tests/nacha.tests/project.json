@@ -1,0 +1,28 @@
+﻿{
+  "version": "1.0.0-*",
+  "dependencies": {
+    "nacha": "1.0.0-1",
+    "System.Threading.Tasks": "4.0.10.0",
+    "xunit": "2.1.0",
+    "xunit.runner.console": "2.1.0",
+    "xunit.runner.visualstudio": "2.1.0"
+  },
+  "frameworks": {
+    "net461": {
+      "dependencies": {
+        "Microsoft.NETCore.Platforms": "1.0.1"
+      },
+      "frameworkAssemblies": {
+        "System.Runtime": {
+          "type": "build",
+          "version": ""
+        }
+      }
+    }
+  },
+  "buildOptions": {
+    "copyToOutput": {
+      "include": [ "xunit.runner.json" ]
+    }
+  }
+}

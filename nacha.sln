@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{68BC75F8-C789-46A8-8F6E-0592AB642B20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AC2BE3A1-CA07-4786-96EB-1FE44DC6E656}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "nacha", "src\nacha\nacha.xproj", "{93CE6468-7C51-4262-BB95-C654D049A709}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F059E6E7-AD7E-4D8B-BE64-29A3F287064B}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "nacha.tests", "tests\nacha.tests\nacha.tests.xproj", "{350681B4-1A2A-46E8-BF9C-C352CD460239}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93CE6468-7C51-4262-BB95-C654D049A709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CE6468-7C51-4262-BB95-C654D049A709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CE6468-7C51-4262-BB95-C654D049A709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CE6468-7C51-4262-BB95-C654D049A709}.Release|Any CPU.Build.0 = Release|Any CPU
+		{350681B4-1A2A-46E8-BF9C-C352CD460239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350681B4-1A2A-46E8-BF9C-C352CD460239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350681B4-1A2A-46E8-BF9C-C352CD460239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350681B4-1A2A-46E8-BF9C-C352CD460239}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93CE6468-7C51-4262-BB95-C654D049A709} = {68BC75F8-C789-46A8-8F6E-0592AB642B20}
+		{350681B4-1A2A-46E8-BF9C-C352CD460239} = {F059E6E7-AD7E-4D8B-BE64-29A3F287064B}
+	EndGlobalSection
+EndGlobal
