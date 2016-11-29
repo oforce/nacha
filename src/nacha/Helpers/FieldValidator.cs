@@ -1,44 +1,46 @@
-﻿namespace Nacha.Helpers
+﻿using System.Collections.Generic;
+
+namespace Nacha.Helpers
 {
     public static class FieldValidator
     {
-        public static void ValidateString(string Name, string Value, ref string Message)
+        public static void Validate(string Name, string Value, ref List<string> Message)
         {
             if (Value == null || Value.Trim() == "")
             {
-                Message += Name + ", ";
+                Message.Add(Name);
             }
         }
 
-        public static void ValidateShort(string Name, short Value, ref string Message)
+        public static void Validate(string Name, short Value, ref List<string> Message)
         {
             if (Value == 0)
             {
-                Message += Name + ", ";
+                Message.Add(Name);
             }
         }
 
-        public static void ValidateInt(string Name, int Value, ref string Message)
+        public static void Validate(string Name, int Value, ref List<string> Message)
         {
             if (Value == 0)
             {
-                Message += Name + ", ";
+                Message.Add(Name);
             }
         }
 
-        public static void ValidateLong(string Name, long Value, ref string Message)
+        public static void Validate(string Name, long Value, ref List<string> Message)
         {
             if (Value == 0)
             {
-                Message += Name + ", ";
+                Message.Add(Name);
             }
         }
 
-        public static void ValidatePositiveLong(string Name, long Value, ref string Message)
+        public static void ValidatePositive(string Name, long Value, ref List<string> Message)
         {
             if (Value < 0)
             {
-                Message += Name + ", ";
+                Message.Add(Name);
             }
         }
     }
