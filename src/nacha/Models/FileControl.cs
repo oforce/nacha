@@ -3,6 +3,7 @@ using Nacha.Constants;
 using Nacha.Enums;
 using Nacha.Helpers;
 using System;
+using System.Collections.Generic;
 
 namespace Nacha.Models
 {
@@ -16,7 +17,8 @@ namespace Nacha.Models
 
         public void Validate()
         {
-            var _message = "";
+            var _message = new List<string>();
+
             FieldValidator.ValidateShort(nameof(RecordType), RecordType, ref _message);
             FieldValidator.ValidateInt(nameof(BatchCount), BatchCount, ref _message);
             FieldValidator.ValidateInt(nameof(BlockCount), BlockCount, ref _message);
@@ -25,10 +27,10 @@ namespace Nacha.Models
             FieldValidator.ValidateLong(nameof(TotalDebitAmount), TotalDebitAmount, ref _message);
             FieldValidator.ValidateLong(nameof(TotalCreditAmount), TotalCreditAmount, ref _message);
 
-            if (_message != "")
+            if (_message.Count > 0)
             {
                 throw new ArgumentException(ExceptionConstants.Shared_RequiredProperties +
-                    _message.Substring(0, _message.Length - 2));
+                    string.Join(", ", _message));
             }
         }
 

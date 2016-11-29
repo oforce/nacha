@@ -3,6 +3,7 @@ using Nacha.Constants;
 using Nacha.Enums;
 using Nacha.Helpers;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Nacha.Models
@@ -33,7 +34,8 @@ namespace Nacha.Models
 
         public void Validate()
         {
-            var _message = "";
+            var _message = new List<String>();
+
             FieldValidator.ValidateShort(nameof(RecordType), RecordType, ref _message);
             FieldValidator.ValidateString(nameof(ImmediateDestination), ImmediateDestination, ref _message);
             FieldValidator.ValidateString(nameof(ImmediateOrigin), ImmediateOrigin, ref _message);
@@ -41,10 +43,10 @@ namespace Nacha.Models
             FieldValidator.ValidateString(nameof(ImmediateDestinationName), ImmediateDestinationName, ref _message);
             FieldValidator.ValidateString(nameof(ImmediateOriginName), ImmediateOriginName, ref _message);
 
-            if (_message != "")
+            if (_message.Count > 0)
             {
-                throw new ArgumentException(ExceptionConstants.Shared_RequiredProperties + 
-                    _message.Substring(0, _message.Length - 2));
+                throw new ArgumentException(ExceptionConstants.Shared_RequiredProperties +
+                    string.Join(", ", _message));
             }
 
             // the exposed api keeps these values in sync.
