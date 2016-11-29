@@ -28,15 +28,15 @@ namespace Nacha.Models
         {
             var _message = new List<String>();
 
-            FieldValidator.ValidateShort(nameof(RecordType), RecordType, ref _message);
-            FieldValidator.ValidateShort(nameof(ServiceClassCode), ServiceClassCode, ref _message);
-            FieldValidator.ValidateString(nameof(CompanyName), CompanyName, ref _message);
-            FieldValidator.ValidateString(nameof(CompanyIdentification), CompanyIdentification, ref _message);
-            FieldValidator.ValidateString(nameof(StandardEntryClassCode), StandardEntryClassCode, ref _message);
-            FieldValidator.ValidateString(nameof(CompanyEntryDescription), CompanyEntryDescription, ref _message);
-            FieldValidator.ValidateShort(nameof(OriginatorStatusCode), OriginatorStatusCode, ref _message);
-            FieldValidator.ValidateString(nameof(OriginatingDfi), OriginatingDfi, ref _message);
-            FieldValidator.ValidateInt(nameof(BatchNumber), BatchNumber, ref _message);
+            FieldValidator.Validate(nameof(RecordType), RecordType, ref _message);
+            FieldValidator.Validate(nameof(ServiceClassCode), ServiceClassCode, ref _message);
+            FieldValidator.Validate(nameof(CompanyName), CompanyName, ref _message);
+            FieldValidator.Validate(nameof(CompanyIdentification), CompanyIdentification, ref _message);
+            FieldValidator.Validate(nameof(StandardEntryClassCode), StandardEntryClassCode, ref _message);
+            FieldValidator.Validate(nameof(CompanyEntryDescription), CompanyEntryDescription, ref _message);
+            FieldValidator.Validate(nameof(OriginatorStatusCode), OriginatorStatusCode, ref _message);
+            FieldValidator.Validate(nameof(OriginatingDfi), OriginatingDfi, ref _message);
+            FieldValidator.Validate(nameof(BatchNumber), BatchNumber, ref _message);
 
             if (_message.Count > 0)
             {

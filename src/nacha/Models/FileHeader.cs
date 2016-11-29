@@ -36,12 +36,12 @@ namespace Nacha.Models
         {
             var _message = new List<String>();
 
-            FieldValidator.ValidateShort(nameof(RecordType), RecordType, ref _message);
-            FieldValidator.ValidateString(nameof(ImmediateDestination), ImmediateDestination, ref _message);
-            FieldValidator.ValidateString(nameof(ImmediateOrigin), ImmediateOrigin, ref _message);
-            FieldValidator.ValidateString(nameof(Id), Id, ref _message);
-            FieldValidator.ValidateString(nameof(ImmediateDestinationName), ImmediateDestinationName, ref _message);
-            FieldValidator.ValidateString(nameof(ImmediateOriginName), ImmediateOriginName, ref _message);
+            FieldValidator.Validate(nameof(RecordType), RecordType, ref _message);
+            FieldValidator.Validate(nameof(ImmediateDestination), ImmediateDestination, ref _message);
+            FieldValidator.Validate(nameof(ImmediateOrigin), ImmediateOrigin, ref _message);
+            FieldValidator.Validate(nameof(Id), Id, ref _message);
+            FieldValidator.Validate(nameof(ImmediateDestinationName), ImmediateDestinationName, ref _message);
+            FieldValidator.Validate(nameof(ImmediateOriginName), ImmediateOriginName, ref _message);
 
             if (_message.Count > 0)
             {

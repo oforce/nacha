@@ -30,12 +30,12 @@ namespace Nacha.Models
         {
             var _message = new List<String>();
 
-            FieldValidator.ValidateShort(nameof(RecordType), RecordType, ref _message);
-            FieldValidator.ValidateInt(nameof(EntryAndAddendaCount), EntryAndAddendaCount, ref _message);
-            FieldValidator.ValidateLong(nameof(EntryHash), EntryHash, ref _message);
-            FieldValidator.ValidateString(nameof(CompanyIdentification), CompanyIdentification, ref _message);
-            FieldValidator.ValidateString(nameof(OriginatingDfi), OriginatingDfi, ref _message);
-            FieldValidator.ValidateInt(nameof(BatchNumber), BatchNumber, ref _message);
+            FieldValidator.Validate(nameof(RecordType), RecordType, ref _message);
+            FieldValidator.Validate(nameof(EntryAndAddendaCount), EntryAndAddendaCount, ref _message);
+            FieldValidator.Validate(nameof(EntryHash), EntryHash, ref _message);
+            FieldValidator.Validate(nameof(CompanyIdentification), CompanyIdentification, ref _message);
+            FieldValidator.Validate(nameof(OriginatingDfi), OriginatingDfi, ref _message);
+            FieldValidator.Validate(nameof(BatchNumber), BatchNumber, ref _message);
 
             if (_message.Count > 0)
             {
