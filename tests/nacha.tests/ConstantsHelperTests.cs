@@ -1,7 +1,7 @@
 ﻿using Xunit;
-using Nacha.Constants;
+using CMS.Nacha.Constants;
 
-namespace Nacha.Tests
+namespace CMS.Nacha.Tests
 {
     public class ConstantsHelperTests
     {

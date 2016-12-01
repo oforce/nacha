@@ -1,15 +1,13 @@
 {
   "copyright": "Copyright ©2016 Contractor Management Services",
   "description": "C# library used to generate ACH files in the NACHA format. This project is targeted specifically to Wells Fargo's requirements.",
-  "title": "Nacha",
+  "title": "CMS.Nacha",
   "version": "0.1.1-rc",
-
   "frameworks": {
     "net461": {
     }
   },
-
   "dependencies": {
     "FileHelpers": "3.1.5"
-  }
+  } 
 }

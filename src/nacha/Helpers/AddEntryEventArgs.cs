@@ -1,7 +1,7 @@
-﻿using Nacha.Models;
+﻿using CMS.Nacha.Models;
 using System;
 
-namespace Nacha.Helpers
+namespace CMS.Nacha.Helpers
 {
     public class AddEntryEventArgs:EventArgs
     {

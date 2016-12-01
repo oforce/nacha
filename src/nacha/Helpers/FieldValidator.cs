@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Nacha.Helpers
+namespace CMS.Nacha.Helpers
 {
     public static class FieldValidator
     {

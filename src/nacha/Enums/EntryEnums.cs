@@ -1,4 +1,4 @@
-﻿namespace Nacha.Enums
+﻿namespace CMS.Nacha.Enums
 {
     public enum AddendaRecordIndicatorEnum : short
     {

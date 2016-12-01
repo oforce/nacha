@@ -1,9 +1,9 @@
-﻿using Nacha.Enums;
-using Nacha.Helpers;
-using Nacha.Models;
+﻿using CMS.Nacha.Enums;
+using CMS.Nacha.Helpers;
+using CMS.Nacha.Models;
 using Xunit;
 
-namespace Nacha.Tests
+namespace CMS.Nacha.Tests
 {
     public class ControlHelperTests
     {

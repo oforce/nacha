@@ -1,12 +1,12 @@
 ﻿using FileHelpers;
-using Nacha.Constants;
-using Nacha.Enums;
-using Nacha.Helpers;
+using CMS.Nacha.Constants;
+using CMS.Nacha.Enums;
+using CMS.Nacha.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Nacha.Models
+namespace CMS.Nacha.Models
 {
     [FixedLengthRecord]
     public class FileHeader : BaseModel

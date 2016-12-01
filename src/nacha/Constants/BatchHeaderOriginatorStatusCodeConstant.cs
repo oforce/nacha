@@ -1,4 +1,4 @@
-﻿namespace Nacha.Constants
+﻿namespace CMS.Nacha.Constants
 {
     public class BatchHeaderOriginatorStatusCodeConstant
     {

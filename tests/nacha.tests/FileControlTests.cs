@@ -1,10 +1,10 @@
-﻿using Nacha.Enums;
-using Nacha.Models;
+﻿using CMS.Nacha.Enums;
+using CMS.Nacha.Models;
 using System;
 using System.Collections.Generic;
 using Xunit;
 
-namespace Nacha.Tests
+namespace CMS.Nacha.Tests
 {
     public class FileControlTests
     {

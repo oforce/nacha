@@ -1,12 +1,12 @@
-﻿using Nacha.Constants;
-using Nacha.Enums;
-using Nacha.Models;
+﻿using CMS.Nacha.Constants;
+using CMS.Nacha.Enums;
+using CMS.Nacha.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace Nacha.Tests
+namespace CMS.Nacha.Tests
 {
     public class FileTests
     {

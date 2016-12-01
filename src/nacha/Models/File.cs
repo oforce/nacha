@@ -1,9 +1,9 @@
-﻿using Nacha.Constants;
-using Nacha.Helpers;
+﻿using CMS.Nacha.Constants;
+using CMS.Nacha.Helpers;
 using System;
 using System.Collections.Generic;
 
-namespace Nacha.Models
+namespace CMS.Nacha.Models
 {
     public class File
     {

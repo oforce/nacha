@@ -1,9 +1,9 @@
 ﻿using FileHelpers;
-using Nacha.Constants;
-using Nacha.Enums;
+using CMS.Nacha.Constants;
+using CMS.Nacha.Enums;
 using System;
 
-namespace Nacha.Models
+namespace CMS.Nacha.Models
 {
     public class BaseModel
     {

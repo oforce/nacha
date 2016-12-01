@@ -1,14 +1,14 @@
 ﻿using FileHelpers;
-using Nacha.Constants;
-using Nacha.Enums;
-using Nacha.Helpers;
+using CMS.Nacha.Constants;
+using CMS.Nacha.Enums;
+using CMS.Nacha.Helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
-namespace Nacha.Models
+namespace CMS.Nacha.Models
 {
     [FixedLengthRecord]
     public class BatchControl : BaseModel
