@@ -1,7 +1,10 @@
-﻿{
-  "version": "1.0.0-*",
+{
+  "copyright": "Copyright ©2016 Contractor Management Services",
+  "title": "CMS.Nacha.Tests",
+  "description": "Unit Tests for CMS.Nacha",
+  "version": "0.1.1-rc",
   "dependencies": {
-    "nacha": "1.0.0-1",
+    "CMS.Nacha": "0.1.1-rc",
     "System.Threading.Tasks": "4.0.10.0",
     "xunit": "2.1.0",
     "xunit.runner.console": "2.1.0",
