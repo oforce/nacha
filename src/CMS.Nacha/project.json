@@ -9,5 +9,8 @@
   },
   "dependencies": {
     "FileHelpers": "3.1.5"
+  },
+  "buildOptions": {
+    "xmlDoc": true
   } 
 }

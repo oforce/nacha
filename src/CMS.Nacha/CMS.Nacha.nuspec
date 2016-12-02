@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CMS.Nacha</id>
+    <version>0.1.1-beta</version>
+    <title>CMS.Nacha</title>
+    <authors>timmus</authors>
+    <owners>Contractor Management Services</owners>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.en.html</licenseUrl>
+    <projectUrl>https://github.com/contractormanagementservices/nacha</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>C# library used to generate ACH files in the NACHA format. This project is targeted specifically to Wells Fargo's requirements.</description>
+    <releaseNotes>Initial Project</releaseNotes>
+    <copyright>Copyright ©2016 Contractor Management Services</copyright>
+    <tags>nacha</tags>
+    <dependencies>
+      <dependency id="FileHelpers" version="3.1.5" />
+    </dependencies>
+  </metadata>
+  <files>
+      <file src="bin\Release\net461\CMS.Nacha.dll" target="lib\net461\CMS.Nacha.dll" />
+      <file src="bin\Release\net461\CMS.Nacha.xml" target="lib\net461\CMS.Nacha.xml" />
+  </files> 
+</package>
